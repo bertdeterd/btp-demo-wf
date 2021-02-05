@@ -1,0 +1,27 @@
+{
+    "id": "myfrm",
+    "schemaVersion": "1.1.0",
+    "name": "myfrm",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "approvaltest",
+            "type": "string",
+            "label": "approvaltext",
+            "readOnly": false,
+            "value": "${context.approvaltxt}",
+            "constraints": {
+                "required": true
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "approve",
+            "decisionType": "positive"
+        }
+    ]
+}

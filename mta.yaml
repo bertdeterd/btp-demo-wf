@@ -1,0 +1,17 @@
+_schema-version: "3.2"
+ID: wfdemo
+version: 0.0.1
+modules:
+  - name: modwf
+    type: com.sap.application.content
+    path: modwf
+    requires:
+      - name: bertwm_workflow
+        parameters:
+          content-target: true
+resources:
+  - name: bertwm_workflow
+    parameters:
+      service-plan: standard
+      service: workflow
+    type: org.cloudfoundry.existing-service
